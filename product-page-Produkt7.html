@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naostrzone | Garnek Emaliowany Scarlet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="obrazy/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="obrazy/favicon.png" alt="Logo sklepu" class="logo">
+            <span class="tagline">Naostrzone | Akcesoria dla twojej kuchni</span>
+            <div class="search-bar-container">
+                <form class="search-form" action="#" method="GET">
+                    <input type="text" name="search" placeholder="Wyszukaj produkty" class="search-input">
+                    <button type="submit" class="search-button">Szukaj</button>
+                </form>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Mojekonto.html">Moje konto</a></li>
+                <li><a href="Produkty.html">Produkty</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+                <a href="Koszyk.html">
+                    <div class="cart">
+                      <i class="bi bi-cart2"></i>
+                      <div id="cartAmount" class="cartAmount">0</div>
+                    </div>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="full-banner"></div>
+
+    <main>
+        <div class="product-details">
+            <div class="product-info">
+                <h1>Garnek Emaliowany Scarlet</h1>
+                <p><strong>Styl, trwałość i funkcjonalność</strong> – garnek emaliowany Scarlet to doskonały wybór dla każdego, kto ceni piękno i praktyczność w kuchni. Jego głęboki czerwony kolor wprowadza elegancję, jednocześnie spełniając wszystkie potrzeby kulinarne. Dzięki pojemności 3 litrów świetnie sprawdzi się zarówno do codziennego gotowania, jak i przygotowywania większych posiłków na rodzinne spotkania.<br><br>
+                Wysokiej jakości stal emaliowana gwarantuje długowieczność garnka oraz odporność na uszkodzenia mechaniczne i chemiczne. Gładka, nieprzywierająca powłoka wewnętrzna ułatwia czyszczenie, oszczędzając Twój czas i energię. Scarlet nie tylko gotuje, ale również zachowuje naturalne smaki potraw, dzięki czemu Twoje dania będą zawsze pełne aromatu.<br><br>
+                Garnek Scarlet jest idealny do gotowania na różnych rodzajach kuchenek – gazowych, elektrycznych czy ceramicznych. Jego ergonomiczne uchwyty ułatwiają przenoszenie, a lekka konstrukcja sprawia, że użytkowanie jest komfortowe. To narzędzie, które łączy tradycję z nowoczesnością, wnosząc do Twojej kuchni styl i funkcjonalność. Dzięki pięknemu wyglądowi, Scarlet może być również serwowany prosto na stół, jako element dekoracyjny podkreślający elegancję Twoich posiłków.</p><br>
+                <h2>Specyfikacja:</h2>
+                <div class="specification-box">
+                    <ul>
+                        <li><strong>Pojemność:</strong> 3 litry</li>
+                        <li><strong>Materiał:</strong> stal emaliowana</li>
+                        <li><strong>Średnica:</strong> 24 cm</li>
+                        <li><strong>Wysokość:</strong> 10 cm</li>
+                        <li><strong>Waga:</strong> 2.8 kg</li>
+                        <li><strong>Kolor:</strong> głęboka czerwień</li>
+                        <li><strong>Kompatybilność:</strong> kuchenki gazowe, elektryczne, ceramiczne</li>
+                        <li><strong>Wyprodukowano w:</strong> Polska</li>
+                    </ul>
+                </div><br>
+                <p><strong>Cena:</strong> 45 zł</p><br>
+                <button class="add-to-cart" data-id="Produkt7">Dodaj do koszyka</button>
+            </div>
+            <div class="product-image">
+                <img id="productImage" src="produkty/7.jpeg" alt="Garnek Emaliowany Scarlet">
+                <div class="image-navigation">
+                    <button onclick="changeImage('produkty/7.jpeg')">&#8592; Poprzedni</button>
+                    <button onclick="changeImage('produkty/8.jpeg')">Następny &#8594;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Baner promocyjny -->
+        <section class="promo-bar">
+            <div id="promo-bar">
+                <p>Darmowa dostawa dla zamówień powyżej 100 zł!</p>
+            </div>
+        </section>
+
+        <!-- Sekcja z opiniami klientów -->
+        <section class="customer-reviews">
+            <h2>Opinie naszych klientów</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <p class="review-text">"Garnek Scarlet to piękno i funkcjonalność w jednym. Wygląda świetnie i sprawdza się idealnie!"</p>
+                    <p class="review-author">- Zofia, Poznań</p>
+                    <p class="review-rating">★★★★★</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Solidny, praktyczny i łatwy w czyszczeniu. Gorąco polecam!"</p>
+                    <p class="review-author">- Michał, Kraków</p>
+                    <p class="review-rating">★★★★★</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"To mój ulubiony garnek – piękny design i doskonała jakość."</p>
+                    <p class="review-author">- Anna, Gdynia</p>
+                    <p class="review-rating">★★★★★</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="newsletter-bar">
+            <div class="newsletter-content">
+                <img src="obrazy/newsletter.gif" alt="Rabaty" class="newsletter-gif">
+                <div class="newsletter-text">
+                    <h2>Rabaty dla subskrybentów!</h2>
+                    <p>Zapisz się na newsletter i otrzymuj najnowsze okazje!</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Twój e-mail *" required>
+                    <button type="submit">ZAPISZ MNIE DO ZNIŻEK</button>
+                </form>
+            </div>
+        </section>
+        <p>Kontakt: naostrzone@gmail.pl | Telefon: 536 248 284</p>
+        <p>© 2025 Naostrzone. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('productImage').src = imageSrc;
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

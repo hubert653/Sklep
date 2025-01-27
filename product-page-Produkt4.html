@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naostrzone | Nóż Uniwersalny do Filetowania</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="obrazy/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="obrazy/favicon.png" alt="Logo sklepu" class="logo">
+            <span class="tagline">Naostrzone | Akcesoria dla twojej kuchni</span>
+            <div class="search-bar-container">
+                <form class="search-form" action="#" method="GET">
+                    <input type="text" name="search" placeholder="Wyszukaj produkty" class="search-input">
+                    <button type="submit" class="search-button">Szukaj</button>
+                </form>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Mojekonto.html">Moje konto</a></li>
+                <li><a href="Produkty.html">Produkty</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+                <a href="Koszyk.html">
+                    <div class="cart">
+                      <i class="bi bi-cart2"></i>
+                      <div id="cartAmount" class="cartAmount">0</div>
+                    </div>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="full-banner"></div>
+
+    <main>
+        <div class="product-details">
+            <div class="product-info">
+                <h1>Nóż Uniwersalny do Filetowania</h1>
+                <p><strong>Precyzyjne filetowanie</strong> jeszcze nigdy nie było tak proste! Nóż uniwersalny do filetowania został zaprojektowany z myślą o dokładności i wygodzie, umożliwiając łatwe przygotowywanie ryb, mięsa czy drobiu.<br><br>
+                Wykonany z wysokiej jakości stali nierdzewnej, ostrze zapewnia wyjątkową ostrość, a ergonomiczna rękojeść z tworzywa antypoślizgowego gwarantuje pewny chwyt nawet w wilgotnych warunkach. To narzędzie, które spełni oczekiwania zarówno domowych kucharzy, jak i profesjonalistów.<br>
+                </p><br>
+                <h2>Specyfikacja:</h2>
+                <div class="specification-box">
+                    <ul>
+                        <li><strong>Długość ostrza:</strong> 15 cm</li>
+                        <li><strong>Materiał:</strong> stal nierdzewna o wysokiej ostrości</li>
+                        <li><strong>Uchwyt:</strong> tworzywo antypoślizgowe</li>
+                        <li><strong>Całkowita długość:</strong> 27 cm</li>
+                        <li><strong>Grubość ostrza:</strong> 2 mm</li>
+                        <li><strong>Szerokość ostrza:</strong> 3 cm</li>
+                        <li><strong>Długość rękojeści:</strong> 12 cm</li>
+                        <li><strong>Wyprodukowano w:</strong> Polska</li>
+                    </ul>
+                </div><br>
+                <p><strong>Cena:</strong> 150 zł</p><br>
+                <button class="add-to-cart" data-id="Produkt4">Dodaj do koszyka</button>
+            </div>
+            <div class="product-image">
+                <img id="productImage" src="produkty/4.jpeg" alt="Nóż Uniwersalny do Filetowania">
+                <div class="image-navigation">
+                    <button onclick="changeImage('produkty/4.jpeg')">&#8592; Poprzedni</button>
+                    <button onclick="changeImage('produkty/p5.jpg')">Następny &#8594;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Baner promocyjny -->
+        <section class="promo-bar">
+            <div id="promo-bar">
+                <p>Darmowa dostawa dla zamówień powyżej 100 zł!</p>
+            </div>
+        </section>
+
+        <!-- Sekcja z opiniami klientów -->
+        <section class="customer-reviews">
+            <h2>Opinie naszych klientów</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <p class="review-text">"Nóż idealny do filetowania. Precyzja na najwyższym poziomie."</p>
+                    <p class="review-author">- Piotr, Gdańsk</p>
+                    <p class="review-rating">★★★★★</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Wspaniała jakość i wygoda użytkowania. Polecam wszystkim!"</p>
+                    <p class="review-author">- Anna, Warszawa</p>
+                    <p class="review-rating">★★★★★</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"To najlepszy nóż do filetowania, jaki miałam!"</p>
+                    <p class="review-author">- Katarzyna, Kraków</p>
+                    <p class="review-rating">★★★★★</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="newsletter-bar">
+            <div class="newsletter-content">
+                <img src="obrazy/newsletter.gif" alt="Rabaty" class="newsletter-gif">
+                <div class="newsletter-text">
+                    <h2>Rabaty dla subskrybentów!</h2>
+                    <p>Zapisz się na newsletter i otrzymuj najnowsze okazje!</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Twój e-mail *" required>
+                    <button type="submit">ZAPISZ MNIE DO ZNIŻEK</button>
+                </form>
+            </div>
+        </section>
+        <p>Kontakt: naostrzone@gmail.pl | Telefon: 536 248 284</p>
+        <p>© 2025 Naostrzone. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('productImage').src = imageSrc;
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naostrzone | Talerz obiadowy Indigo Wave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="obrazy/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="obrazy/favicon.png" alt="Logo sklepu" class="logo">
+            <span class="tagline">Naostrzone | Akcesoria dla twojej kuchni</span>
+            <div class="search-bar-container">
+                <form class="search-form" action="#" method="GET">
+                    <input type="text" name="search" placeholder="Wyszukaj produkty" class="search-input">
+                    <button type="submit" class="search-button">Szukaj</button>
+                </form>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Mojekonto.html">Moje konto</a></li>
+                <li><a href="Produkty.html">Produkty</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+                <a href="Koszyk.html">
+                    <div class="cart">
+                      <i class="bi bi-cart2"></i>
+                      <div id="cartAmount" class="cartAmount">0</div>
+                    </div>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="full-banner"></div>
+
+    <main>
+        <div class="product-details">
+            <div class="product-info">
+                <h1>Talerz obiadowy Indigo Wave</h1>
+                <p><strong>Elegancja i wyjątkowy styl</strong> – talerz obiadowy Indigo Wave to dzieło sztuki inspirowane pięknem oceanicznych fal. Ręcznie wykonany z wysokiej jakości ceramiki, jest nie tylko praktycznym elementem wyposażenia kuchni, ale również estetycznym dodatkiem do Twojego stołu.<br><br>
+                Dzięki unikalnemu wzorowi każdy talerz jest niepowtarzalny, co czyni go idealnym wyborem na wyjątkowe okazje oraz do codziennego użytku. Jego wytrzymała powłoka zapewnia odporność na zarysowania i wysokie temperatury, dzięki czemu nadaje się do mycia w zmywarce i używania w mikrofalówce.<br><br>
+                Stwórz niezapomnianą atmosferę podczas posiłków, wybierając talerz Indigo Wave, który łączy nowoczesność z tradycyjnym rzemiosłem.</p><br>
+                <h2>Specyfikacja:</h2>
+                <div class="specification-box">
+                    <ul>
+                        <li><strong>Średnica:</strong> 28 cm</li>
+                        <li><strong>Materiał:</strong> ceramika</li>
+                        <li><strong>Kolor:</strong> granatowy z białymi akcentami</li>
+                        <li><strong>Odporność:</strong> mikrofalówka, zmywarka</li>
+                        <li><strong>Wyprodukowano w:</strong> Polska</li>
+                    </ul>
+                </div><br>
+                <p><strong>Cena:</strong> 100 zł</p><br>
+                <button class="add-to-cart" data-id="Produkt8">Dodaj do koszyka</button>
+            </div>
+            <div class="product-image">
+                <img id="productImage" src="produkty/8.jpeg" alt="Talerz obiadowy Indigo Wave">
+                <div class="image-navigation">
+                    <button onclick="changeImage('produkty/7.jpeg')">&#8592; Poprzedni</button>
+                    <button onclick="changeImage('produkty/9.jpeg')">Następny &#8594;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Baner promocyjny -->
+        <section class="promo-bar">
+            <div id="promo-bar">
+                <p>Darmowa dostawa dla zamówień powyżej 100 zł!</p>
+            </div>
+        </section>
+
+        <!-- Sekcja z opiniami klientów -->
+        <section class="customer-reviews">
+            <h2>Opinie naszych klientów</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <p class="review-text">"Talerz Indigo Wave to połączenie funkcjonalności i piękna. Każdy posiłek smakuje lepiej!"</p>
+                    <p class="review-author">- Zuzanna, Wrocław</p>
+                    <p class="review-rating">★★★★★</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Wyjątkowy design i świetna jakość. Polecam każdemu!"</p>
+                    <p class="review-author">- Łukasz, Warszawa</p>
+                    <p class="review-rating">★★★★★</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Indigo Wave to prawdziwa ozdoba mojego stołu. Wyjątkowy produkt!"</p>
+                    <p class="review-author">- Aleksandra, Kraków</p>
+                    <p class="review-rating">★★★★★</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="newsletter-bar">
+            <div class="newsletter-content">
+                <img src="obrazy/newsletter.gif" alt="Rabaty" class="newsletter-gif">
+                <div class="newsletter-text">
+                    <h2>Rabaty dla subskrybentów!</h2>
+                    <p>Zapisz się na newsletter i otrzymuj najnowsze okazje!</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Twój e-mail *" required>
+                    <button type="submit">ZAPISZ MNIE DO ZNIŻEK</button>
+                </form>
+            </div>
+        </section>
+        <p>Kontakt: naostrzone@gmail.pl | Telefon: 536 248 284</p>
+        <p>© 2025 Naostrzone. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('productImage').src = imageSrc;
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
